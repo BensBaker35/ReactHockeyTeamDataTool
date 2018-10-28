@@ -1,47 +1,5 @@
 import React, { Component } from 'react';
-/*
-class MyComponent extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        visibility: false
-      };
-      // change code below this line
-      this.toggleVisibility = this.toggleVisibility.bind(this);
-      // change code above this line
-    }
-    // change code below this line
-    toggleVisibility() {
-        if(this.state.visibility === true){
-          this.setState()
-        }
-        else{
-            this.setState({
-                visibility: true
-            });
-        }
-    }
-    // change code above this line
-    render() {
-        
-      if (this.state.visibility) {
-        return (
-          <div>
-            <button onClick={this.toggleVisibility}>Click Me</button>
-            <h1>Now you see me!</h1>
-          </div>
-        );
-      } else {
-        return (
-          <div>
-            <button onClick={this.toggleVisibility}>Click Me</button>
-          </div>
-        );
-      }
-    }
-  };
-*/
-
+import PlayerData from './PlayerData'
 class StatDispaly extends React.Component {
     constructor(props){
         super(props);
@@ -83,6 +41,7 @@ class StatDispaly extends React.Component {
                 <div>
                     <h1>{teamID.name}</h1>
                     <h3>({teamID.wins},{teamID.losses},{teamID.otl})</h3>
+                    {this.displayRoster()}
                 </div>
             );
         }
@@ -90,8 +49,15 @@ class StatDispaly extends React.Component {
             return <p>Search for a team</p>
         }
     }
-    createTeams(test){
-        console.log(test);
+    displayRoster(){
+        let players = [];
+        let teamRoster = this.state.team.roster;
+        for(var i = 0; i < teamRoster.length; i++){
+            players.push(
+                <PlayerData player={teamRoster[i]} key={teamRoster[i].jerseyNumber}/>
+            )
+        }
+        return players;
     }
 }
 
