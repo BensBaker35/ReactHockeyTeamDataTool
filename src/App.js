@@ -73,7 +73,7 @@ class App extends Component {
     event.preventDefault();
     
     console.log(this.state.name);
-    const teamID = this.convertInput(this.state.name);
+    const teamID = this.convertInput(this.state.name.toLowerCase());
     console.log(teamID);
     if(teamID === -1){
       this.setState({
@@ -131,14 +131,24 @@ class App extends Component {
 
   convertInput(name){
     
-    var found = this.teamArr.find((element) => {
-      return element.id? element.name === name : element.name !== name
-    })
-    if(found === undefined){
-      return -1;
-    }else{
-      return found.id;
+    
+    for(var i = 0; i < this.teamArr.length; i++){
+      var team = this.teamArr[i];
+      console.log(team);
+      if(name === team.name.toLowerCase()){
+        return team.id
+      }
+      else{
+        for(var j = 0; j < team.shorthand.length; j++){
+          
+          var shortName = team.shorthand[j].toLowerCase();
+          if(shortName === name){
+            return team.id
+          }
+        }
+      }
     }
+    return -1;
    
   }
 
