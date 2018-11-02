@@ -1,21 +1,23 @@
 import React from 'react'
+import '../css/PlayerData.css'
 
 class PlayerData extends React.Component{
     
     constructor(props){
         super(props)
         this.state = {
-            player: props.player
+            player: props.player,
+            displayStat: props.displayStat,
+            
         }
     }
     
     
     
     render(){
-        console.log(this.state.player)
         return (
            
-            <h2>{this.state.player.person.fullName}</h2>
+            <button className="PlayerButton">{this.state.player.person.fullName}</button>
         );
         
     }

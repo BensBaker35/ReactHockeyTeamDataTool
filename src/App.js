@@ -12,7 +12,8 @@ class App extends Component {
       name: '',
       team: '',
       test: false,
-      error: false
+      error: false,
+      teamMeta: '',
     }
     this.teamArr = NHLTeams.teams;
   }
@@ -41,7 +42,7 @@ class App extends Component {
           onChange={this.handleNameChange} />
           <input type="submit" value="submit" className="submit"/>
       </form>
-        <StatDisplay team = {this.state.team} test={true}/>
+        <StatDisplay team = {this.state.team} test={true} teamColor={this.getTeamColor()}/>
       </div>
       );
     }
@@ -55,7 +56,7 @@ class App extends Component {
             <input type="submit" value="submit" className="submit"/>
         </form>
           <h1>Look Up {this.state.name}</h1>
-          <StatDisplay team ={this.state.team} test ={false}/>
+          <StatDisplay team ={this.state.team} test ={false} teamColor={null}/>
         </div>
         
       );
@@ -71,10 +72,9 @@ class App extends Component {
   }
   lookUpTeam = (event) => {
     event.preventDefault();
-    
-    console.log(this.state.name);
+    //console.log(this.state.name);
     const teamID = this.convertInput(this.state.name.toLowerCase());
-    console.log(teamID);
+    //console.log(teamID);
     if(teamID === -1){
       this.setState({
         name: '',
@@ -93,7 +93,8 @@ class App extends Component {
               name: this.state.name,
               team: '',
               test: false,
-              error: true
+              error: true,
+              
             })
             return response.json().then(error =>{
                 console.log(error)
@@ -134,7 +135,7 @@ class App extends Component {
     
     for(var i = 0; i < this.teamArr.length; i++){
       var team = this.teamArr[i];
-      console.log(team);
+      //console.log(team);
       if(name === team.name.toLowerCase()){
         return team.id
       }
@@ -152,25 +153,27 @@ class App extends Component {
    
   }
 
-  parseTeamBody(body){
-
-    if (body.teams) {
-      console.log(body.teams);
-      this.setState({
-        name : this.state.name,
-        team : body.teams,
-        test: true,
-        error: false
-      });
+  getTeamColor(){
+    var teamID = this.state.team.id;
+    if(teamID !== undefined){
+      console.log(teamID);
       
+      var teamElement = this.teamArr.find((element)=> {
+        return (element.id === teamID) ? element.color : false
+      })
+      /*for(var i = 0; i < this.teamArr.length; i++){
+        if(this.teamArr[i].id === teamID){
+          element = this.teamArr[i]
+        }
+      }*/
+
+      console.log(teamElement);
+      return teamElement.color;
     }
-    if (body.dates) {
-        console.log(body.dates);
-    }
-    if (body.people) {
-        console.log(body.people)
-    }
+    return -1;
+   
   }
+
 
 
 

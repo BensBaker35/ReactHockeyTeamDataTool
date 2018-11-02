@@ -6,7 +6,8 @@ class StatDispaly extends React.Component {
         //console.log(props);
         this.state = {
             team: props.team,
-            test: props.test
+            test: props.test,
+            teamColor: props.teamColor
         };
         this.renderTeams.bind(this);
     }
@@ -18,14 +19,15 @@ class StatDispaly extends React.Component {
     }
 
     componentWillReceiveProps(props){
-       // console.log(props)
+        console.log(props)
         //console.log(this.props);
         const {team, test} = this.props;
         if(props.test !== test ||
             props.team !== team){
             this.setState({
                 team: props.team,
-                test: props.test
+                test: props.test,
+                teamColor: props.teamColor
             })
         }
         
@@ -33,13 +35,16 @@ class StatDispaly extends React.Component {
 
 
     render(){
-        console.log(this.state)
-       
+       //console.log(this.state.teamColor)
         if(this.state.test){
             const teamID = this.state.team;
+            console.log(this.state.teamColor);
+            const playerStyle = {
+                color: this.state.teamColor
+            }
             return (
                 <div>
-                    <h1>{teamID.name}</h1>
+                    <h1 style={playerStyle}>{teamID.name}</h1>
                     <h3>({teamID.wins},{teamID.losses},{teamID.otl})</h3>
                     {this.displayRoster()}
                 </div>
@@ -54,7 +59,7 @@ class StatDispaly extends React.Component {
         let teamRoster = this.state.team.roster;
         for(var i = 0; i < teamRoster.length; i++){
             players.push(
-                <PlayerData player={teamRoster[i]} key={teamRoster[i].jerseyNumber}/>
+                <PlayerData player={teamRoster[i]} key={teamRoster[i].jerseyNumber} displayStat={false}/>
             )
         }
         return players;

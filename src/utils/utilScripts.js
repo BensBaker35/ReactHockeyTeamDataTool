@@ -1,4 +1,4 @@
-convertInput(name){
+function convertInput(name){
     
     var found = this.teamArr.find((element) => {
       return element.id? element.name === name : element.name !== name

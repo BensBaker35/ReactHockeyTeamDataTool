@@ -2,158 +2,189 @@
    "teams":[
        {
            "name": "New Jersey Devils",
-           "id" : "1",
-           "shorthand": ["Devils","NJD"]
+           "id" : 1,
+           "shorthand": ["Devils","NJD"],
+           "color":"#CE1126"
        },
        {
         "name": "New York Islanders",
-        "id" : "2",
-        "shorthand": ["Islanders","NYI"]
+        "id" : 2,
+        "shorthand": ["Islanders","NYI"],
+        "color":"#00539B"
     },
     {
         "name": "New York Rangers",
-        "id" : "3",
-        "shorthand": ["Rangers","NYR"]
+        "id" : 3,
+        "shorthand": ["Rangers","NYR"],
+        "color": "#0038A8"
     },
     {
         "name": "Philadelphia Flyers",
-        "id" : "4",
-        "shorthand": ["Flyers","PHI"]
+        "id" : 4,
+        "shorthand": ["Flyers","PHI"],
+        "color":"#F74902"
     },
     {
         "name": "Pittsburg Penguins",
-        "id" : "5",
-        "shorthand": ["PENS","Penguins"]
+        "id" : 5,
+        "shorthand": ["PENS","Penguins"],
+        "color":"#CFC493"
     },
     {
         "name": "Boston Bruins",
-        "id" : "6",
-        "shorthand": ["Bruins","BOS"]
+        "id" : 6,
+        "shorthand": ["Bruins","BOS"],
+        "color": "#FFB81C"
     },
     {
         "name": "Buffalo Sabres",
-        "id" : "7",
-        "shorthand": ["BUF","Sabres"]
+        "id" : 7,
+        "shorthand": ["BUF","Sabres"],
+        "color": "#002654"
     },
     {
         "name": "Montreal Canadiens",
-        "id" : "8",
-        "shorthand": ["Canadiens","MON", "Habs"]
+        "id" : 8,
+        "shorthand": ["Canadiens","MON", "Habs"],
+        "color":"#AF1E2D"
     },
     {
         "name": "Ottawa Senators",
-        "id" : "9",
-        "shorthand": ["Sens","OTT", "Senators"]
+        "id" : 9,
+        "shorthand": ["Sens","OTT", "Senators"],
+        "color":"#E31837"
     },
     {
         "name": "Toronto Maple Leafs",
-        "id" : "10",
-        "shorthand": ["Maple Leafs","TOR","Leafs"]
+        "id" : 10,
+        "shorthand": ["Maple Leafs","TOR","Leafs"],
+        "color":"#003E7E"
     },
     {
         "name": "Carolina Hurricanes",
-        "id" : "12",
-        "shorthand": ["Hurricanes","CAR"]
+        "id" : 12,
+        "shorthand": ["Hurricanes","CAR"],
+        "color":"#CC0000"
     },
     {
         "name": "Florida Panthers",
-        "id" : "13",
-        "shorthand": ["Panthers","FLA"]
+        "id" : 13,
+        "shorthand": ["Panthers","FLA"],
+        "color":"#041E42"
     },
     {
         "name": "Tampa Bay Lightning",
-        "id" : "14",
-        "shorthand": ["Lightning","TBL"]
+        "id" : 14,
+        "shorthand": ["Lightning","TBL"],
+        "color":"#002868"
     },
     {
         "name": "Washington Capitals",
-        "id" : "15",
-        "shorthand": ["Caps","Capitals","WSH"]
+        "id" : 15,
+        "shorthand": ["Caps","Capitals","WSH"],
+        "color":"#041E42"
     },
     {
         "name": "Chicago Blackhawks",
-        "id" : "16",
-        "shorthand": ["Hawks","CHI","Blackhawks"]
+        "id" : 16,
+        "shorthand": ["Hawks","CHI","Blackhawks"],
+        "color":"#CF0A2C"
     },
     {
         "name": "Detroit Red Wings",
-        "id" : "17",
-        "shorthand": ["Red Wings","DET"]
+        "id" : 17,
+        "shorthand": ["Red Wings","DET"],
+        "color":"#CE1126"
     },
     {
         "name": "Nashville Predators",
-        "id" : "18",
-        "shorthand": ["Preds","NSH","Predaotrs"]
+        "id" : 18,
+        "shorthand": ["Preds","NSH","Predaotrs"],
+        "color":"#FFB81C"
     },
     {
         "name": "St. Louis Blues",
-        "id" : "19",
-        "shorthand": ["Blues","STL"]
+        "id" : 19,
+        "shorthand": ["Blues","STL"],
+        "color":"#002F87"
     }, 
     {
         "name": "Calgary Flames",
-        "id" : "20",
-        "shorthand": ["Flames","CAL"]
+        "id" : 20,
+        "shorthand": ["Flames","CAL"],
+        "color":"#C8102E"
     },
     {
         "name": "Colorado Avalance",
-        "id" : "21",
-        "shorthand": ["Avs","COL","Avalance"]
+        "id" : 21,
+        "shorthand": ["Avs","COL","Avalance"],
+        "color":"#6F263D"
     },
     {
         "name": "Edmonton Oilers",
-        "id" : "22",
-        "shorthand": ["Oilers","EDM"]
+        "id" : 22,
+        "shorthand": ["Oilers","EDM"],
+        "color":"#041E42"
     },
     {
         "name": "Vancouver Canucks",
-        "id" : "23",
-        "shorthand": ["Canucks","VAN"]
+        "id" : 23,
+        "shorthand": ["Canucks","VAN"],
+        "color":"#001F5B"
     },
     {
         "name": "Anaheim Ducks",
-        "id" : "24",
-        "shorthand": ["Ducks","ANA"]
+        "id" : 24,
+        "shorthand": ["Ducks","ANA"],
+        "color":"#F47A38"
     },
     {
         "name": "Dallas Stars",
-        "id" : "25",
-        "shorthand": ["Stars","DAL"]
+        "id" : 25,
+        "shorthand": ["Stars","DAL"],
+        "color":"#006847"
     },
     {
         "name": "Los Angels Kings",
-        "id" : "26",
-        "shorthand": ["Kings","LAK"]
+        "id" : 26,
+        "shorthand": ["Kings","LAK"],
+        "color":"#111111"
     },
     {
         "name": "San Jose Sharks",
-        "id" : "28",
-        "shorthand": ["Sharks","SJS"]
+        "id" : 28,
+        "shorthand": ["Sharks","SJS"],
+        "color":"#006D75"
     },
     {
         "name": "Columbus Blue Jackets",
-        "id" : "29",
-        "shorthand": ["Blue Jackets","CBJ"]
+        "id" : 29,
+        "shorthand": ["Blue Jackets","CBJ"],
+        "color":"#002654"
     },
     {
         "name": "Minnesota Wild",
-        "id" : "30",
-        "shorthand": ["Wild","MIN"]
+        "id" : 30,
+        "shorthand": ["Wild","MIN"],
+        "color":"#154734"
     },
     {
         "name": "Winnipeg Jets",
-        "id" : "52",
-        "shorthand": ["Jets","WIN"]
+        "id" : 52,
+        "shorthand": ["Jets","WIN"],
+        "color": "#041E42"
     },
     {
         "name": "Arizona Coyotes",
-        "id" : "53",
-        "shorthand": ["Coyotes","ARI"]
+        "id" : 53,
+        "shorthand": ["Coyotes","ARI"],
+        "color":"#8C2633"
     },
     {
         "name": "Las Vegas Golden Knights",
-        "id" : "54",
-        "shorthand": ["Knights","VGK","Golden Knights"]
+        "id" : 54,
+        "shorthand": ["Knights","VGK","Golden Knights"],
+        "color":"#B4975A"
     }
    ]
 }
