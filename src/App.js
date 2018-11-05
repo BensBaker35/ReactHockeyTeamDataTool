@@ -71,6 +71,12 @@ class App extends Component {
     })
   }
   lookUpTeam = (event) => {
+    this.setState({
+      name:'',
+      team:'',
+      test: false,
+      error: false
+    })
     event.preventDefault();
     //console.log(this.state.name);
     const teamID = this.convertInput(this.state.name.toLowerCase());
