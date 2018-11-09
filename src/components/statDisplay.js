@@ -59,7 +59,7 @@ class StatDispaly extends React.Component {
         let teamRoster = this.state.team.roster;
         for(var i = 0; i < teamRoster.length; i++){
             players.push(
-                <PlayerData player={teamRoster[i]} key={teamRoster[i].jerseyNumber} displayStat={false}/>
+                <PlayerData player={teamRoster[i]} key={teamRoster[i].jerseyNumber}/>
             )
         }
         return players;

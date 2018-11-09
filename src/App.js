@@ -89,8 +89,9 @@ class App extends Component {
         error: true
       })
     }else{
-      fetch(`http://localhost:4000/${teamID}`)
+      fetch(`http://localhost:4000/teams/${teamID}`)
     .then((response)=>{
+      console.log(response);
       if (!response.ok) {
         const contentType = response.headers.get('content-type');
         if (contentType.includes('json')) {
