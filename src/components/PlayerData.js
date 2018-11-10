@@ -125,7 +125,7 @@ class PlayerData extends React.Component{
                     <td>{stat.shots}</td>
                     <td>{stat.bshots}</td>
                     <td>{stat.points}</td>
-                    <td>{stat.season}</td>
+                    <td>{stat.season.substring(0,4) + '-' + stat.season.substring(4)}</td>
                 </tr>
                 rows.push(row);
             }
@@ -160,7 +160,7 @@ class PlayerData extends React.Component{
                     <td>{stat.gms}</td>
                     <td>{stat.shots}</td>
                     
-                    <td>{stat.season}</td>
+                    <td>{stat.season.substring(0,4) + '-' + stat.season.substring(4)}</td>
                 </tr>
                 rows.push(row)    
             }
