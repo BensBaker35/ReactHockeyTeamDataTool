@@ -1,0 +1,3 @@
+## NHL Team Look Up
+
+NHL Team Look Up is made with React, it interacts with the [NHL API](https://github.com/BensBaker35/NHLAPI/blob/master/README.md) and a [custom API](https://github.com/BensBaker35/NHLAPI/blob/master/main.js) that filters through the data and takes what it needs. Each team has their own color and colloquial names, full name, and ID(used by the actual NHL API). The Full name nad colloquial name can be used in the search bar. If the search is sucessful it will display each active player on the team. Each player has an ID(Also, used by the NHL API) that is used when they are clicked on to get their stats.
