@@ -3,7 +3,6 @@ import './App.css'
 import StatDisplay from './components/statDisplay';
 import NHLTeams from './utils/NHLTeams.json';
 
-const request = require('request');
 
 class App extends Component {
   constructor(){

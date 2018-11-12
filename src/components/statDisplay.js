@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PlayerData from './PlayerData'
 class StatDispaly extends React.Component {
     constructor(props){

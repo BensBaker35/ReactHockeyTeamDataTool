@@ -146,9 +146,9 @@ class PlayerData extends React.Component{
                 <td>Season</td>
             </tr>
             rows.push(goalieHeader);
-            for(var i = 0; i< stats.length; i++){
-                var stat = stats[i];
-                var row = 
+            for(i = 0; i< stats.length; i++){
+                stat = stats[i];
+                row = 
                 <tr key={i + stat.teamName + stat.season}>
                     <td>{stat.teamName}</td>
                     <td>{stat.wins}</td>
